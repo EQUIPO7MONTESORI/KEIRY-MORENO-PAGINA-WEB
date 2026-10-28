@@ -1,20 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
-*{
-margin: 0;
-padding: 0; 
-box-sizing: border-box;
-font-family: Original Surfer, sans-serif;
+
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
 }
-body{
-      display: grid;
-      grud-template-rows: auto 1fr auto;
-      min-height: 100vh;
-      min-heihgt: 100dvh;
-} 
-.header{
-  background-color: rgba(22, 66, 91, 1);
-  display: flex; 
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem; 
+
+body {
+    background-color: #f0f6ff;
+    color: #26364a;
+    line-height: 1.7;
+}
+
+/* Encabezado */
+.headeer {
+    background: linear-gradient(135deg, #0d47a1, #42a5f5);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* Navegación */
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 0 12px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #0d47a1;
+}
+
+/* Botones de idioma */
+.languages {
+    margin-top: 15px;
+}
+
+.lang-button {
+    background-color: white;
+    color: #1565c0;
+    border: 2px solid white;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-button:hover {
+    background-color: #bbdefb;
+    transform: scale(1.05);
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sección sobre mí */
+.section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(21, 101, 192, 0.12);
+    border-left: 6px solid #2196f3;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    color: #1565c0;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+}
+
+.section p {
+    font-size: 1.05rem;
+    text-align: justify;
+    color: #455a64;
+}
+
+/* Diseño para celulares */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
 }
